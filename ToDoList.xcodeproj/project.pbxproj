@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4F67072A4EA5940050DDAF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4F67062A4EA5940050DDAF /* ListViewModel.swift */; };
 		BDDA4F092A4AD7A40076379C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA4F082A4AD7A40076379C /* ContentView.swift */; };
 		BDDA4F0D2A4AD88D0076379C /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA4F0C2A4AD88D0076379C /* ItemModel.swift */; };
+		BDDDCD892A52A40D008D7790 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDDCD882A52A40D008D7790 /* NoItemsView.swift */; };
 		BDFD84422A4AA63600904E29 /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFD84412A4AA63600904E29 /* ToDoListApp.swift */; };
 		BDFD84462A4AA63800904E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFD84452A4AA63800904E29 /* Assets.xcassets */; };
 		BDFD84492A4AA63800904E29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDFD84482A4AA63800904E29 /* Preview Assets.xcassets */; };
@@ -18,8 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD4F67062A4EA5940050DDAF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		BDDA4F082A4AD7A40076379C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDDA4F0C2A4AD88D0076379C /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		BDDDCD882A52A40D008D7790 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
 		BDFD843E2A4AA63600904E29 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDFD84412A4AA63600904E29 /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		BDFD84452A4AA63800904E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +52,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BDDA4F0E2A4AE5AE0076379C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD4F67062A4EA5940050DDAF /* ListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		BDFD84352A4AA63600904E29 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +79,7 @@
 		BDFD84402A4AA63600904E29 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				BDDA4F0E2A4AE5AE0076379C /* ViewModels */,
 				BDDA4F0A2A4AD80C0076379C /* Models */,
 				BDFD84502A4AAF3500904E29 /* Views */,
 				BDFD84412A4AA63600904E29 /* ToDoListApp.swift */,
@@ -91,6 +104,7 @@
 				BDFD84512A4AAF4E00904E29 /* ListView.swift */,
 				BDFD84532A4AB01100904E29 /* ListRowView.swift */,
 				BDFD84552A4AB6B600904E29 /* AddView.swift */,
+				BDDDCD882A52A40D008D7790 /* NoItemsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,9 +181,11 @@
 			files = (
 				BDDA4F0D2A4AD88D0076379C /* ItemModel.swift in Sources */,
 				BDFD84422A4AA63600904E29 /* ToDoListApp.swift in Sources */,
+				BD4F67072A4EA5940050DDAF /* ListViewModel.swift in Sources */,
 				BDDA4F092A4AD7A40076379C /* ContentView.swift in Sources */,
 				BDFD84562A4AB6B600904E29 /* AddView.swift in Sources */,
 				BDFD84522A4AAF4E00904E29 /* ListView.swift in Sources */,
+				BDDDCD892A52A40D008D7790 /* NoItemsView.swift in Sources */,
 				BDFD84542A4AB01100904E29 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = G35M75Q83N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -306,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoList/Preview Content\"";
+				DEVELOPMENT_TEAM = G35M75Q83N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -334,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
